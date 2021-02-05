@@ -1,11 +1,12 @@
 import './style.css';
 
 import React from 'react';
+import TaskContainer from './containers/TaskContainer'
 
 function App() {
   return (
-    <div >
-     i am app
+    <div className='container' >
+     <TaskContainer/>
     </div>
   );
 }

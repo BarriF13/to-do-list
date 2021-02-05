@@ -1,0 +1,13 @@
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  margin: 0;
+}
+.container{
+  margin: 0 auto;
+ border: 1px solid aliceblue;
+  color:teal;
+}
+.title{
+ 
+}
