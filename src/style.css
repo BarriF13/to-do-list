@@ -5,14 +5,23 @@ body {
 }
 .container{
   margin: 0 auto;
+  padding: 10px;
  border: 1px solid aliceblue;
   color:teal;
+  align-content: space-between;
 }
-.title{
- 
+.task{
+ text-align: center;
+ margin-right: 5px;
+}
+.taskInput{
+  margin-right: 5px;
+  border: 1px rgb(223, 221, 221) solid;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 .filters{
-  border: 1px solid rgb(207, 207, 219);
+ 
   width: 100%;
   display: flex;
   flex-direction: row;
