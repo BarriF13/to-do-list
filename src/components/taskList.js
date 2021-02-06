@@ -2,13 +2,13 @@ import React from 'react';
 import TaskItem from '../components/TaskItem';
 
 
-const TaskList = ({ taskList }) => {
+const TaskList = ({ taskList , onCheck}) => {
   return (
     <div>
       <ul>
         {
           taskList.map(task => (
-            <TaskItem key={task.id} task={task}/>
+            <TaskItem onCheck={onCheck} key={task.id} task={task}/>
           ))
         }
       </ul>

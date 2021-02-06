@@ -1,10 +1,17 @@
 import React from 'react'
 
-const TaskItem = ({task}) => {
+const TaskItem = ({ task, onCheck }) => {
+
+  const onCheckBoxClick = () => {
+    onCheck(task.id)
+  }
   return (
-    <li key={task.id}>
-    {task.title}
-  </li>
+    <div>
+
+      <li key={task.id}>
+        <input type="checkbox" checked={task.isCompleted} onClick={onCheckBoxClick}/>{task.title}
+      </li>
+    </div>
   )
 }
 
